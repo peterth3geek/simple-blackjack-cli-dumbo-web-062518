@@ -70,12 +70,12 @@ describe "#initial_round" do
 
 end
 
-describe "#hit?" do
-  before(:each) do
-    def get_user_input
-      "s"
-    end
-  end
+#describe "#hit?" do
+#  before(:each) do
+#    def get_user_input
+#      "s"
+#    end
+#  end
 
   it "calls on #prompt_user then #get_user_input" do
     expect($stdout).to receive(:puts).with("Type 'h' to hit or 's' to stay")
@@ -110,7 +110,7 @@ describe "#runner" do
   end
 
   it "calls on the #welcome method,
-  then on the #initial_round method, 
+  then on the #initial_round method,
   then calls #hit? and #display_card_total methods
   -until- the card sum is greater than 21,
   then calls on the #end_game method" do
