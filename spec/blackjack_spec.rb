@@ -7,7 +7,7 @@ end
 
 describe "#deal_card" do
   it "generates a random number between 1-11" do
-    20.times do 
+    20.times do
       card = deal_card
       expect(card).to be > 0
       expect(card).to be < 12
@@ -105,11 +105,11 @@ describe "#runner" do
 
   before(:each) do
     def get_user_input
-      "h"
-    end 
+      "s"
+    end
   end
 
-  it "calls on the #welcome method, 
+  it "calls on the #welcome method,
   then on the #initial_round method, 
   then calls #hit? and #display_card_total methods
   -until- the card sum is greater than 21,
