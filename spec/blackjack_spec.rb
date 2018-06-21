@@ -70,7 +70,7 @@ describe "#initial_round" do
 
 end
 
-#describe "#hit?" do
+describe "#hit?" do
 #  before(:each) do
 #    def get_user_input
 #      "s"
